@@ -86,6 +86,13 @@ const DetailNewsTab = createStackNavigator(
             headerTintColor: '#fff',
             title: 'detail news',
         },
+        headerLeft: (
+
+            <Button
+                title="< Back"
+                onPress={() => navigation.navigate('Book')}
+            />
+        ),
     }
 );
 

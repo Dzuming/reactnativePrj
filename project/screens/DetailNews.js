@@ -3,13 +3,27 @@
 
 
 import React, { Component } from 'react';
-              <Badge><Text>2</Text></Badge>
+          
 import { Container, Header, Content, Footer, FooterTab, Button, Icon, Text, Fab ,Card,CardItem ,Left ,Thumbnail ,Body, Right ,Badge} from 'native-base';
 import {  StyleSheet,View,Image} from 'react-native';
 
 
 export default class DetailNews extends Component {
- 
+  static navigationOptions = ({ navigation }) => {
+    const { state } = navigation;
+    return {
+      
+        headerLeft: (
+
+    
+
+          <Button transparent     onPress={() => navigation.navigate('Book')}>
+         
+                  <Text> Back</Text>
+                </Button>
+        ),
+    }
+}
     constructor(props) {
         super(props);
         this.state = {
@@ -52,9 +66,11 @@ export default class DetailNews extends Component {
             <View style={styles.container}>
                    <Text style={styles.title}>
                 DetailNews  #{JSON.stringify(itemDescription)}
-                selman
+                
                 </Text>
          </View>
+
+         
          <Button style={{ flex:1 }}  title="Back To news" onPress={() => this.onPress()}  />
             <CardItem>
               <Left>
@@ -74,15 +90,8 @@ export default class DetailNews extends Component {
               </Right>
             </CardItem>
           </Card>
-
-       
- 
-     
         </Content>
-        kusura bakma ben sana açıklarken orada en önemli 2 şeyden bahsettim mezheplerin 5 adete çıkması ve Ehli SÜnnete saldırılar.
-
-ITIKADIMA DINIME SALDIRANLAR BABAM BİLE OLSA TANIMAM.
-     
+   
 
         <Footer>
           <FooterTab>
@@ -96,7 +105,7 @@ ITIKADIMA DINIME SALDIRANLAR BABAM BİLE OLSA TANIMAM.
               <Text>Camera</Text>
             </Button>
             <Button active badge vertical>
-              <Badge ><Text>51</Text></Badge>
+              <Badge ><Text>3333</Text></Badge>
               <Icon active name="navigate" />
               <Text>Navigate</Text>
             </Button>

@@ -1,0 +1,19 @@
+dependencies: \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Base/RCTConvert.m \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Base/RCTConvert.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Views/RCTAnimationType.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Views/RCTBorderStyle.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Base/RCTDefines.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/DevSupport/RCTInspectorDevServerHelper.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/DevSupport/RCTPackagerConnection.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Base/RCTLog.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Base/RCTAssert.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Base/RCTUtils.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Views/RCTPointerEvents.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
+  /Volumes/apple/react/phpLogin/ios/build/phpLogin/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Volumes/apple/react/phpLogin/ios/build/phpLogin/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Volumes/apple/react/phpLogin/ios/build/phpLogin/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Volumes/apple/react/phpLogin/ios/build/phpLogin/Build/Products/Debug-iphonesimulator/include/yoga/YGValue.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Base/RCTImageSource.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Base/RCTParserUtils.h

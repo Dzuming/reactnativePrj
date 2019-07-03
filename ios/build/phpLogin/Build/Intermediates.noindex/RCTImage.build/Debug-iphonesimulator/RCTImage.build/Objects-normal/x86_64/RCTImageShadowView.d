@@ -1,0 +1,21 @@
+dependencies: \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/Libraries/Image/RCTImageShadowView.m \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/Libraries/Image/RCTImageShadowView.h \
+  /Volumes/apple/react/phpLogin/ios/build/phpLogin/Build/Products/Debug-iphonesimulator/include/React/RCTShadowView.h \
+  /Volumes/apple/react/phpLogin/ios/build/phpLogin/Build/Products/Debug-iphonesimulator/include/React/RCTComponent.h \
+  /Volumes/apple/react/phpLogin/ios/build/phpLogin/Build/Products/Debug-iphonesimulator/include/React/RCTLayout.h \
+  /Volumes/apple/react/phpLogin/ios/build/phpLogin/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Volumes/apple/react/phpLogin/ios/build/phpLogin/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Volumes/apple/react/phpLogin/ios/build/phpLogin/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Volumes/apple/react/phpLogin/ios/build/phpLogin/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Volumes/apple/react/phpLogin/ios/build/phpLogin/Build/Products/Debug-iphonesimulator/include/yoga/YGValue.h \
+  /Volumes/apple/react/phpLogin/ios/build/phpLogin/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
+  /Volumes/apple/react/phpLogin/ios/build/phpLogin/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Volumes/apple/react/phpLogin/ios/build/phpLogin/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Volumes/apple/react/phpLogin/ios/build/phpLogin/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Volumes/apple/react/phpLogin/ios/build/phpLogin/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Volumes/apple/react/phpLogin/ios/build/phpLogin/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Volumes/apple/react/phpLogin/ios/build/phpLogin/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Volumes/apple/react/phpLogin/ios/build/phpLogin/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
+  /Volumes/apple/react/phpLogin/ios/build/phpLogin/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Volumes/apple/react/phpLogin/ios/build/phpLogin/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h

@@ -1,0 +1,24 @@
+dependencies: \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Views/ScrollView/RCTScrollContentView.m \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Views/ScrollView/RCTScrollContentView.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Views/RCTView.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Views/RCTBorderStyle.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Views/RCTComponent.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Views/RCTPointerEvents.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Base/RCTAssert.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Base/RCTDefines.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/DevSupport/RCTInspectorDevServerHelper.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/DevSupport/RCTPackagerConnection.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Views/UIView+React.h \
+  /Volumes/apple/react/phpLogin/ios/build/phpLogin/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Volumes/apple/react/phpLogin/ios/build/phpLogin/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Views/ScrollView/RCTScrollView.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Views/RCTAutoInsetsProtocol.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Base/RCTBridge.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Volumes/apple/react/phpLogin/node_modules/react-native/React/Views/ScrollView/RCTScrollableProtocol.h

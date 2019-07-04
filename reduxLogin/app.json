@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "phpLogin",
-    "slug": "phpLogin",
+    "name": "reduxLogin",
+    "slug": "reduxLogin",
     "privacy": "public",
     "sdkVersion": "33.0.0",
     "platforms": [

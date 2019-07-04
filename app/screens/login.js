@@ -31,7 +31,7 @@ export default class login extends Component {
 	login = () =>{
 		const {userEmail,userPassword} = this.state;
 		const ApiUrl = clientConfig.ApiUrl;
-
+/*
 		let reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
 		if(userEmail==""){
 			//alert("Please enter Email address");
@@ -39,34 +39,39 @@ export default class login extends Component {
 			
 		}
 		
-		else if(reg.test(userEmail) === false)
+		
+		 if(reg.test(userEmail) === false)
 		{
 		//alert("Email is Not Correct");
 		this.setState({email:'Email is Not Correct'})
 		return false;
 		  }
-
-		else if(userPassword==""){
+*/
+		 if(userPassword==""){
 		this.setState({email:'Please enter password'})
 		}
 		else{
+			console.log(ApiUrl);
+		
 		//https://github.com/imranhsayed/react-with-wordpress/blob/login-with-jwt-wordpress-plugin/src/components/Login.js
 		fetch(ApiUrl,{
-			method:'post',
-			header:{
-				'Accept': 'application/json',
-				'Content-type': 'application/json'
+			method: "POST",
+			headers:{
+				'Content-Type': 'application/json',
+				'accept': 'application/json',
 			},
 			body:JSON.stringify({
-				// we will pass our input data to server
-				email: userEmail,
+				username: userEmail,
 				password: userPassword
 			})
-			
+		
 		})
+		
 		.then((response) => response.json())
 		 .then((responseJson)=>{
+			 console.log (responseJson.code)
 			 if(responseJson == "ok"){
+				this.setState({email:''})
 				 // redirect to profile page
 				 alert("Successfully Login");
 				 this.props.navigation.navigate("Profile");

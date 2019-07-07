@@ -13,15 +13,16 @@ import BookcaseItem from './bookcaseItem';
 export default class Boookcase extends Component {
 
 
-    static navigationOptions = ({navigation}) => {
-        return{ 
-          
-        title: 'edit book',
+    static navigationOptions = {
         headerTitle: 'Home',
-        // header: null,
-     
-    }
-    }
+        headerRight: (
+          <Button
+            onPress={() => alert('This is a button!')}
+            title="Info"
+            color="#fff"
+          />
+        ),
+    };
 
     constructor(props) {
         super(props);

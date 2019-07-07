@@ -15,31 +15,29 @@ import CommentsNews from './screens/CommentsNews'
 //https://github.com/react-navigation/react-navigation/issues/145#issuecomment-337826964
 
 //https://medium.com/@shovonroy/how-to-properly-navigate-with-react-navigation-e38fe3bf7381
-const BookTab = createStackNavigator(
+const HomeBookTab = createStackNavigator(
     {
         Book: {
             screen: Bookcase,
-            /*
-                        navigationOptions: ({ navigation }) => ({
-                            title: 'Bookcase back',
-                            tabBarVisible: false,
-                            gesturesEnabled: false,
-                            title:'Detail ',
-                        headerTitleStyle:{
-                            fontSize:14,
-                            textAlign: "center",
-                            flex: 1,
-                        },
-                
-                        headerStyle:{
-                            backgroundColor:'#4A94FB',
-                            borderBottomColor: 'transparent',
-                        },
-                        headerTintColor: 'white',
-                        headerBackTitle: "sds",
-                    
-                        }),
-                */
+            navigationOptions: ({ navigation }) => ({
+                title: 'Bookcase back',
+                tabBarVisible: false,
+                gesturesEnabled: false,
+                title: 'Detail ',
+                headerTitleStyle: {
+                    fontSize: 14,
+                    textAlign: "center",
+                    flex: 1,
+                },
+
+                headerStyle: {
+                    backgroundColor: '#4A94FB',
+                    borderBottomColor: 'transparent',
+                },
+                headerTintColor: 'white',
+                headerBackTitle: "sds",
+            }),
+
 
         },
         EditBook: EditBook,
@@ -74,9 +72,9 @@ const NewsTab = createStackNavigator(
 );
 const DetailNewsTab = createStackNavigator(
     {
-     
+
         DetailNews: DetailNews,
-    
+
     },
     {
         defaultNavigationOptions: {
@@ -139,7 +137,7 @@ const ProfileTab = createStackNavigator(
 
 const Tabs = createBottomTabNavigator({
     'Home': {
-        screen: BookTab,
+        screen: HomeBookTab,
         headerMode: 'none',
         header: null,
         navigationOptions: {
@@ -200,7 +198,7 @@ const Tabs = createBottomTabNavigator({
             tabBarLabel: 'Profile',
             title: 'profilesds ',
             //https://github.com/react-navigation/react-navigation/issues/4214
-          //   tabBarVisible: false,
+            //   tabBarVisible: false,
             tabBarIcon: ({ tintColor }) => <Icon name="ios-person" type="ionicon" size={28} color={tintColor} />
         },
         defaultNavigationOptions: {
@@ -211,7 +209,7 @@ const Tabs = createBottomTabNavigator({
 );
 
 
-const RootStack = createStackNavigator(    {
+const RootStack = createStackNavigator({
     Tabs: {
         screen: Tabs,
         navigationOptions: ({ navigation }) => ({
@@ -229,21 +227,21 @@ const RootStack = createStackNavigator(    {
 
 
 },
-{
-   headerMode: 'none',
-    mode: 'modal',
-    defaultNavigationOptions: {
-     title: 'home ekran',
-      headerStyle: {
-        backgroundColor: '#f4511e',
-      },
-      headerTintColor: '#fff',
-      headerTitleStyle: {
-        fontWeight: 'bold',
-      },
-    },
-  
-}
+    {
+        headerMode: 'none',
+        mode: 'modal',
+        defaultNavigationOptions: {
+            title: 'home ekran',
+            headerStyle: {
+                backgroundColor: '#f4511e',
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+                fontWeight: 'bold',
+            },
+        },
+
+    }
 );
 
 

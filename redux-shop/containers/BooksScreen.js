@@ -8,7 +8,14 @@ import {
 import { books } from '../Data'
 import Products from '../components/Products'
 import { connect } from 'react-redux'
+import ShoppingCartIcon from './../containers/ShoppingCartIcon'
 class BooksScreen extends Component {
+    static navigationOptions = {
+        headerTitle: 'HOME',
+        headerRight: (
+            <ShoppingCartIcon/>
+        ),
+      };
     render() {
         return (
             <View style={styles.container}>

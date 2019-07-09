@@ -29,7 +29,13 @@ const mapStateToProps = (state) => {
     }
 }
 
+// EXPORT 
 export default connect(mapStateToProps)(withNavigation(ShoppingCartIcon));
+
+
+
+
+
 
 const styles = StyleSheet.create({
     container: {

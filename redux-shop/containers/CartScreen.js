@@ -6,12 +6,15 @@ import {
 } from "react-native";
 import Products from '../components/Products'
 import { connect } from 'react-redux'
-
+import ShoppingCartIcon from './../containers/ShoppingCartIcon'
 class CartScreen extends Component {
 
     static navigationOptions = {
-        headerTitle: 'card'
-    }
+        headerTitle: 'CARD',
+        headerRight: (
+            <ShoppingCartIcon/>
+        ),
+      };
     render() {
         console.log(this.props.cartItems)
 
@@ -49,4 +52,4 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center'
     }
-});
+});                                  

@@ -5,8 +5,14 @@ import {
     StyleSheet,
     Button
 } from "react-native";
-
+import ShoppingCartIcon from './../containers/ShoppingCartIcon'
 class HomeScreen extends Component {
+    static navigationOptions = {
+        headerTitle: 'HOME',
+        headerRight: (
+            <ShoppingCartIcon/>
+        ),
+      };
     render() {
         return (
             <View style={styles.container}>

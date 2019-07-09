@@ -7,12 +7,16 @@ import {
 import Products from '../components/Products'
 import { electronics } from '../Data'
 import { connect } from 'react-redux'
-
+import ShoppingCartIcon from './../containers/ShoppingCartIcon'
 class ElectronicsScreen extends Component {
 
     static navigationOptions = {
-        headerTitle: 'Electronics'
-    }
+        headerTitle: 'Elektronic',
+        headerRight: (
+          
+           <ShoppingCartIcon/>
+        ),
+      };
     render() {
         return (
             <View style={styles.container}>

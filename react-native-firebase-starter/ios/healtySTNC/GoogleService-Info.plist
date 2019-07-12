@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>366258105618-3qsn57bdmf44a1n789reiiu06fu20c78.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.366258105618-3qsn57bdmf44a1n789reiiu06fu20c78</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA6anDSZxii7XHuXsp4M-ncP1d43G9TwvQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>366258105618</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.healtystnc.healtystnc</string>
+	<key>PROJECT_ID</key>
+	<string>login-4b352</string>
+	<key>STORAGE_BUCKET</key>
+	<string>login-4b352.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:366258105618:ios:5118d5705f836b2a</string>
+	<key>DATABASE_URL</key>
+	<string>https://login-4b352.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,151 +1,75 @@
-watchman watch-del-all
-kill $(lsof -t -i:8081)
 
-rm -rf ios/build/; kill $(lsof -t -i:8081); react-native run-ios
+🚀 React Native Boilerplate - April 2019
+===========================================
 
-
-
-
+[![React Native](https://img.shields.io/badge/React%20Native-v0.59.4-blue.svg)](https://facebook.github.io/react-native/)
+[![React Navigation V3](https://img.shields.io/badge/React%20Navigation-v3.8-blue.svg)](https://reactnavigation.org/)
 
 
-
-<div align="center">
-    <img src="App/Assets/Images/TOM-Legend.png" alt="Logo" width="100%">
-</div>
+React Native Boilerplate is a starting point for React Native application. This project is configured with redux, redux saga 
+and redux persist. Latest version of react-navigation with NavigationService instead of Redux Integration.
 
 
-# TheCodingMachine React Native boilerplate
+## Scalability Factor
 
-This project is a [React Native](https://facebook.github.io/react-native/) boilerplate that can be used to kickstart a mobile application.
+This Type based Architecture scales smoothly for small - medium apps. If you guys are building a very large application I would suggest using the following feature based architecture which will be more developer friendly with ease of scaling.
 
-The boilerplate provides **an architecture optimized for building solid cross-platform mobile applications** through separation of concerns between the UI and business logic. It is extremely documented so that each piece of code that lands in your application can be understood and used.
-
-## Architecture
-
-The driving goal of the architecture of the boilerplate is separation of concerns. Namely:
-
-- **Presentational components are separated from containers** (aka "screens").
-
-    Presentational components are small components that are concerned with *how things look*. Containers usually define whole application screens and are concerned with *how things work*: they include presentational components and wire everything together.
-    
-    If you are interested you can [read more about it here](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0).
-
-- **State is managed using global [Redux](https://redux.js.org/) stores**.
-
-    When applications grow, sharing state and its changes can become very hard. Questions like "How can I access this data?" or "When did this change?" are common, just like passing data around components just to be able to use it in nested components.
-    
-    With Redux, state is shared using global *stores*, and changes are predictable: *actions* are applied by *reducers* to the state. While the pattern can be a bit much for small projects, the clear separation of responsibilities and predictability helps with bigger applications.
-    
-    If you are interested you can [read more about it here](https://redux.js.org/introduction/motivation).
-    
-- **Application side-effects (API calls, etc.) are separated from UI and state manipulation using [Redux Saga](https://redux-saga.js.org/)**.
-
-    Using Redux Saga has two benefits: keeping application side-effects and related business logic out of UI components, as well as executing that logic in an asynchronous way without ending in callback hell.
-    
-    Sagas are triggered by Redux actions and can also trigger Redux actions to alter state. By using JavaScript generators (`yield`), sagas are written in a synchronous-like manner while still executing asynchronously.
-
-## Content
-
-The boilerplate contains:
-
-- a [React Native](https://facebook.github.io/react-native/) (v**0.59.9**) application (in "[ejected](https://github.com/react-community/create-react-native-app/blob/master/EJECTING.md)" mode to allow using dependencies that rely on native code)
-- a [clear directory layout](#directory-layout) to provide a base architecture for your application
-- [Redux](https://redux.js.org/) (v4.0.1) to help manage state
-- [Redux Persist](https://github.com/rt2zz/redux-persist) (v5.10.0) to persist the Redux state
-- [Redux Sagas](https://redux-saga.js.org) (v1.0.2) to separate side-effects and logic from state and UI logic
-- [React Navigation](https://reactnavigation.org/) (v3.6.0) with a [`NavigationService`](App/Services/NavigationService.js) to handle routing and navigation in the app, with a splash screen setup by default
-- [reduxsauce](https://github.com/infinitered/reduxsauce) (v1.0.1) to facilitate using Redux
-- [axios](https://github.com/axios/axios) to make API calls (v0.19.0)
-- [prettier](https://prettier.io/) and [eslint](https://eslint.org/) preconfigured for React Native
-
-The boilerplate includes an example (displaying fake user data) from UI components to the saga. The example is easy to remove so that it doesn't get in the way.
-
-## Directory layout
-
-- [`App/Components`](App/Components): presentational components
-- [`App/Config`](App/Config): configuration of the application
-- [`App/Containers`](App/Containers): container components, i.e. the application's screens
-- [`App/Assets`](App/Assets): assets (image, audio files, ...) used by the application
-- [`App/Navigators`](App/Navigators): react navigation navigators 
-- [`App/Sagas`](App/Sagas): redux sagas
-- [`App/Services`](App/Services): application services, e.g. API clients
-- [`App/Stores`](App/Stores): redux [actions, reducers and stores](https://redux.js.org/basics)
-- [`App/Theme`](App/Theme): base styles for the application
-
-For more information on each directory, click the link and read the directory's README.
-
-## Updates
-
-The boilerplate will follow new React-Native releases as soon as libraries and tools used here are compatible.
-
-## Requirements
-
-Node 8 or greater is required. Development for iOS requires a Mac and Xcode 9 or up, and will target iOS 9 and up.
-
-You also need to install the dependencies required by React Native:
-
-- for [Android development](https://facebook.github.io/react-native/docs/getting-started.html#installing-dependencies-3)
-- for [iOS development](https://facebook.github.io/react-native/docs/getting-started.html#installing-dependencies)
+[React-Native-Feature-BoilerPlate](https://github.com/victorkvarghese/react-native-feature-boilerplate)
 
 
-## Using the boilerplate
 
-To create a new project using the boilerplate:
 
-- clone this repository
-- remove the previous git history: `rm -rf .git/`
-- install the npm dependencies by running `yarn`
-- rename the React Native project to your own project name: `yarn run rename -- <YourProjectName>` (the default name is `Boilerplate`)
-- remove the LICENSE file and the "License" section from the README if your project is not open source
+## Features
 
-Feel free to remove the section "Using the boilerplate" from the README (you will not need it anymore in your project). You are encouraged to keep the rest of the documentation in your project so that it is self-explanatory.
+* [Redux](http://redux.js.org/)
+* [Redux Saga](https://redux-saga.js.org/)
+* [Redux Persist](https://github.com/rt2zz/redux-persist/)
+* [React Navigation](https://reactnavigation.org/) 
+* [React Native Gesture Handler](https://github.com/kmagiera/react-native-gesture-handler) 
+* [Jest](https://facebook.github.io/jest/)
+* [Eslint](http://eslint.org/) ([Airbnb config](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb))
 
-You can now create a new git repository for your project (using `git init`) and create the first commit.
+## Projects using this BoilerPlate
+* [react-native-messenger](https://github.com/victorkvarghese/react-native-messenger)
+* [rn-coffee](https://github.com/victorkvarghese/rn-coffee)
 
-## Running the project
 
-Assuming you have all the requirements installed, you can setup and run the project by running:
+## Prerequisites
 
-- `yarn install` to install the dependencies
-- create your [configuration file `App/Config/index.js`](App/Config) from `index.dev.js` (in you are in dev environment) and fill the missing values
-- `react-native run-android` to run the Android application (remember to start a simulator or connect an Android phone)
-- `react-native run-ios` to run the iOS application (remember to start a simulator or connect an iPhone phone)
+* [Node](https://nodejs.org) v8.10 (it is recommended to install it via [NVM](https://github.com/creationix/nvm))
+* [Yarn](https://yarnpkg.com/)
+* A development machine set up for React Native by following [these instructions](https://facebook.github.io/react-native/docs/getting-started.html)
 
-## Useful documentation
+## Getting Started
 
-### Deployment
+1. Clone this repo, `git clone https://github.com/victorkvarghese/react-native-boilerplate.git <your project name>`
+2. Go to project's root directory, `cd <your project name>`
+3. Remove `.git` folder,  `rm -rf .git`
+4. Open `package.json` and change the `name` property with your project name
+5. Open `index.js` and replace `'ReactNativeBoilerPlate'` by your project name
+6. Open `app.json` and replace `'ReactNativeBoilerPlate'` by your project name 
 
-- Using [Fastlane](https://fastlane.tools/) to automate builds and store deployments (iOS and Android)
-  - [Distributing beta builds](docs/beta%20builds.md)
+7. Run `yarn` or `npm install` to install dependencies
 
-### Package dependencies
-
-- You may want to use [CocoaPods](https://cocoapods.org/) to manage your dependencies (iOS only) 
-  - [Using CocoaPods to manage your package dependencies](docs/setup%20cocoapods.md)
+8. Run `react-native eject` to upgrade and add iOS & Android Folders.
   
-  
-## Troubleshooting
+9. Run `react-native link`
 
-### App fails to start after renaming
+10. Latest versions of react-naviagtion uses gesture handler which is native module. For android you have to do some additional steps to configure them. Follow [these instructions](https://reactnavigation.org/docs/en/getting-started.html)
+## FYI: Navigation should work fine even without these but when u need gestures or drawer navigation you need this setup
 
-If your applicaiton fails to start after using the `yarn run rename` command, please take a look at [this issue](https://github.com/thecodingmachine/react-native-boilerplate/issues/34)
 
-## License
+11. Start the packager with `npm start`
+12. Connect a mobile device to your development machine
+13. Run the test application:
+  * On Android:
+    * Run `react-native run-android`
+  * On iOS:
+    * Open `ios/YourReactProject.xcodeproj` in Xcode
+    * Hit `Run` after selecting the desired device
+14. Enjoy!!!
 
-This project is released under the [MIT License](LICENSE).
 
-## About us
+## Contributing
 
-[TheCodingMachine](https://www.thecodingmachine.com/) is a web and mobile agency based in Paris and Lyon, France. We are [constantly looking for new developers and team leaders](https://www.thecodingmachine.com/nous-rejoindre/) and we love [working with freelancers](https://coders.thecodingmachine.com/). You'll find [an overview of all our open source projects on our website](https://thecodingmachine.io/open-source) and on [Github](https://github.com/thecodingmachine).
-
-## Alternative boilerplates
-
-We looked into existing boilerplates before starting this project, and while many of them are awesome, we did not find what we were looking for.
-
-The most popular is [mcnamee's Starter Kit](https://github.com/mcnamee/react-native-starter-kit), which is unfortunately [limited by *Expo*](https://facebook.github.io/react-native/docs/getting-started#caveats) and misses Redux Saga.
-
-If we look at the rest (and ignore unmaintained projects), many popular boilerplates are too opinionated: they include 3rd party services or very strong architecture choices that we are not comfortable with. To name a few: [Snowflake](https://github.com/bartonhammond/snowflake) runs with a Hapi Server running on Redhat OpenShift, [Hasura's boilerplate](https://github.com/hasura/react-native-auth-boilerplate) uses Hasura's SaaS for authentication, [Apollo's StarterKit](https://github.com/sysgears/apollo-universal-starter-kit) is targeted at GraphQL using Apollo, the [Meteor Boilerplate](https://github.com/spencercarli/react-native-meteor-boilerplate) targets Meteor…
-
-Finally some did not contain the architecture we are looking for (the separation of concerns with Redux, Sagas, etc.), for example [re-start](https://github.com/react-everywhere/re-start).
-
-One interesting exception is [Ignite IR Boilerplate "Andross"](https://github.com/infinitered/ignite-ir-boilerplate-andross), but after consideration we decided not to use it because of the large amount of unnecessary code/components it provided.
+PRs are welcome

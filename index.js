@@ -1,9 +1,11 @@
-/** @format */
+/**
+ * @format
+ */
 
-import { AppRegistry } from 'react-native';
-import Entrypoint from './app/Entrypoint';
-import { name as SecurityHealty } from './app.json';
+import React, { Component } from 'react';
+import { AppRegistry,View,Text,StyleSheet } from 'react-native';
 
+import SecurityHealty from './app/screens/router';
 
+AppRegistry.registerComponent('SecurityHealty', () => SecurityHealty);
 
-AppRegistry.registerComponent(SecurityHealty, () => Entrypoint);

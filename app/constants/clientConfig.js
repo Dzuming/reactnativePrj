@@ -1,23 +1,12 @@
 const BaseConfig = {
-	siteBaseUrl: 'http://brest.test/',
+	siteBaseUrl: 'http://wp.test/',
 };
 
 const clientConfig = {
 	siteUrl: BaseConfig.siteBaseUrl,
-	ApiUrl: BaseConfig.siteBaseUrl+'/wp-json/jwt-auth/v1/token'
+	LoginUrl: BaseConfig.siteBaseUrl+'wp-json/jwt-auth/v1/token',
+	RegisterUrl: BaseConfig.siteBaseUrl+'wp-json/wp/v2/users/register'
 };
 
 export default clientConfig;
 
-/*
-const BaseConfig = {
-	siteBaseUrl: 'http://wp.test',
-};
-
-const clientConfig = {
-	siteUrl: BaseConfig.siteBaseUrl,
-	ApiUrl: BaseConfig.siteBaseUrl+'/wp-json/jwt-auth/v1/token'
-};
-
-export default clientConfig;
-*/

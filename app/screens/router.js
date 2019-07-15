@@ -16,6 +16,6 @@ const Root = createStackNavigator({
  });
 
 
- const phpLogin = createAppContainer(Root);
- export default phpLogin;   
+ const SecurityHealty = createAppContainer(Root);
+ export default SecurityHealty;   
 

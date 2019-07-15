@@ -36,19 +36,11 @@ export default class register extends Component {
 		const { userPassword } = this.state;
 		const RegisterUrl = clientConfig.RegisterUrl;
 
-
-
-
-
 		fetch(RegisterUrl, {
-	
-
-
 			method: 'POST',
 			headers: {
-			  Accept: 'application/json',
-			  'Content-Type': 'application/json',
-			//   'Content-Type': 'application/x-www-form-urlencoded',
+				Accept: 'application/json',
+				'Content-Type': 'application/json',
 			},
 			body: JSON.stringify({
 				username: userName,

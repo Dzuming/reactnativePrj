@@ -47,3 +47,9 @@ https://appdividend.com/2018/08/20/javascript-fetch-api-example-tutorial/
 
 
 https://github.com/imranhsayed/react-with-wordpress/blob/login-with-jwt-wordpress-plugin/src/components/Login.js
+
+
+https://gist.github.com/justsml/529d0b1ddc5249095ff4b890aad5e801
+
+api security
+https://wpcerber.com/restrict-access-to-wordpress-rest-api/

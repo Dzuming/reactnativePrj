@@ -55,7 +55,6 @@ export default class login extends Component {
 					'Content-type': 'application/json'
 				},
 				body: formData,
-
 			})
 
 				.then((responseJson) => responseJson.json())

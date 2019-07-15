@@ -46,3 +46,4 @@ NOTES
 https://appdividend.com/2018/08/20/javascript-fetch-api-example-tutorial/
 
 
+https://github.com/imranhsayed/react-with-wordpress/blob/login-with-jwt-wordpress-plugin/src/components/Login.js

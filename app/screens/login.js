@@ -48,8 +48,6 @@ export default class login extends Component {
 			formData.append('username', userName);
 			formData.append('password', userPassword);
 
-
-			//https://github.com/imranhsayed/react-with-wordpress/blob/login-with-jwt-wordpress-plugin/src/components/Login.js
 			fetch(LoginUrl, {
 				method: 'POST',
 				header: {

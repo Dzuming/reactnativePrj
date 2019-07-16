@@ -1,38 +1,39 @@
-## REACT NATIVE TUTORIALS 
+# REACT NATIVE TUTORIALS 
 
- # 1- react native wordpress login 
+ ## 1- react native wordpress login 
  
  https://github.com/stnc/reactnativePrj/tree/feature/WP_login
  
- # 2- react native firebase 
+ ##  2- react native firebase 
   
  https://github.com/stnc/reactnativePrj/tree/feature_firebase
 
- # 3- react native php rest api login 
+ ##  3- react native php rest api login 
  
  https://github.com/stnc/reactnativePrj/tree/feature_login
 
-  # 4- react navigation
+  ##  4- react navigation
   https://github.com/stnc/reactnativePrj/tree/feature_react-navigation-and-fetch
   
   advanced base 
   https://github.com/stnc/ReactNative-Navigation-Tut
   
-  # 5- react native redux 
+  ##  5- react native redux 
   https://github.com/stnc/reactnativePrj/tree/feature_redux
   
+# PROBLEM FIX NOTES
 
 watchman watch-del-all
 kill $(lsof -t -i:8081)
 
 rm -rf ios/build/; kill $(lsof -t -i:8081); react-native run-ios
 
-# cache clear 
+##  cache clear 
 watchman watch-del-all
 kill $(lsof -t -i:8081)
 react-native start --reset-cache
 
-# new ios and android 
+##  new ios and android folder
 
 rm -rf node_modules;
 rm -rf ios;
@@ -44,7 +45,7 @@ cd ios;
 pod install;
 react-native run-ios
 
-# error Failed to build iOS project. We ran "xcodebuild" command but it exited with error code 65 
+##  error Failed to build iOS project. We ran "xcodebuild" command but it exited with error code 65 
 
 Go to project settings in Xcode. Menu File->Project Settings
 
@@ -63,12 +64,12 @@ pod install;
 cd ..;
 react-native run-ios;
 
-# No bundle URL present.
+##  No bundle URL present.
 
 rm -rf node_modules; yarn install
 rm -rf ios/build/; kill $(lsof -t -i:8081); react-native run-ios
 
-# null is not an object (evaluating '_RNGestureHandlerModule.default.Direction')
+## null is not an object (evaluating '_RNGestureHandlerModule.default.Direction')
 watchman watch-del-all
 kill $(lsof -t -i:8081)
 react-native start --reset-cache
@@ -76,7 +77,7 @@ react-native start --reset-cache
 
 
 
-NOTES
+NOTES LINKS
 
 https://appdividend.com/2018/08/20/javascript-fetch-api-example-tutorial/
 

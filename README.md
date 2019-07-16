@@ -21,7 +21,7 @@
   ##  5- react native redux 
   https://github.com/stnc/reactnativePrj/tree/feature_redux
   
-# PROBLEM FIX NOTES
+# PROBLEM FIX NOTES (for ios)
 
 watchman watch-del-all
 kill $(lsof -t -i:8081)

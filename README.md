@@ -23,15 +23,12 @@
   
 # PROBLEM FIX NOTES (for ios)
 
-watchman watch-del-all
-kill $(lsof -t -i:8081)
+watchman watch-del-all; kill $(lsof -t -i:8081)
 
 rm -rf ios/build/; kill $(lsof -t -i:8081); react-native run-ios
 
 ##  cache clear 
-watchman watch-del-all
-kill $(lsof -t -i:8081)
-react-native start --reset-cache
+watchman watch-del-all; kill $(lsof -t -i:8081); react-native start --reset-cache
 
 ##  new ios and android folder
 
@@ -63,16 +60,23 @@ cd ios;
 pod install;
 cd ..;
 react-native run-ios;
+## or
+rm -rf node_modules;
+npm install;
+rm -rf ios/build/; 
+kill $(lsof -t -i:8081); 
+cd ios;
+pod install;
+cd ..;
+react-native run-ios;
 
 ##  No bundle URL present.
 
-rm -rf node_modules; yarn install
+rm -rf node_modules; yarn install;
 rm -rf ios/build/; kill $(lsof -t -i:8081); react-native run-ios
 
 ## null is not an object (evaluating '_RNGestureHandlerModule.default.Direction')
-watchman watch-del-all
-kill $(lsof -t -i:8081)
-react-native start --reset-cache
+  watchman watch-del-all;   kill $(lsof -t -i:8081);  react-native start --reset-cache;
 
 
 
